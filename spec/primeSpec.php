@@ -46,4 +46,9 @@ class primeSpec extends ObjectBehavior
     {
         $this->generate(9)->shouldReturn([3, 3]);
     }
+
+    public function it_returns_2_2_5_5_for_100()
+    {
+        $this->generate(100)->shouldReturn([2, 2, 5, 5]);
+    }
 }
